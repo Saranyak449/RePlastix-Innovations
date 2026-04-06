@@ -1,0 +1,14 @@
+Flow Name: Inventory Automation
+
+Trigger:
+- When Product__c is updated
+
+Conditions:
+- Stock__c < Threshold__c
+
+Actions:
+1. Create Task (Low Stock Alert)
+2. Update Order Status
+3. Create Replenishment Request
+4. Send for Approval
+5. Send Email Notification
